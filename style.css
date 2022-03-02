@@ -1,0 +1,154 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+
+	position: relative;
+
+	background: #04819E;
+
+	font-family: sans-serif;
+}
+.popup {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 600px;
+	width: 100%;
+	height: 100%;
+	padding: 7px 10px;
+
+	position: absolute;
+
+	background: #fff;
+	border-radius: 15px;
+}
+.popup.active {
+	display: flex;
+}
+.popup h3 {
+	margin-bottom: 40px;
+
+	font-weight: 800;
+	font-size: 23px;
+	text-transform: uppercase;
+	color: #000;
+}
+.btn-again {
+	padding: 5px 20px;
+
+	background: #04819E;
+	border: 3px solid #04819E;
+	border-radius: 15px;
+	cursor: pointer;
+
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+
+	transition: all 0.3s linear;
+}
+.btn-again:hover {
+	background: transparent;
+
+	color: #04819E;
+}
+.quiz-container {
+	max-width: 600px;
+	width: 100%;
+	padding: 7px 10px;
+
+	background: #fff;
+	border-radius: 15px;
+}
+.question-number {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+
+	font-size: 16px;
+	font-weight: 600;
+	color: #04819E;
+}
+.question {
+	margin-bottom: 15px;
+
+	font-weight: 700;
+	font-size: 20px;
+}
+.options {
+	margin-bottom: 15px;
+}
+.option {
+	padding: 15px;
+	margin-bottom: 10px;
+
+	background: rgba(204, 204, 204, 1);
+	cursor: pointer;
+
+	font-weight: 500;
+}
+.option:last-child {
+	margin-bottom: 0;
+}
+.option:hover {
+	background: rgba(204, 204, 204, 0.6);
+}
+.option.correct {
+	background: green;
+	color: #fff;
+}
+.option.wrong {
+	background: red;
+	color: #fff;
+}
+.option.disabled {
+	pointer-events: none;
+}
+.btn-next {
+	padding: 5px 20px;
+
+	background: #04819E;
+	border: 3px solid #04819E;
+	border-radius: 15px;
+	cursor: pointer;
+
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+
+	transition: all 0.3s linear;
+}
+.btn-next:hover {
+	background: transparent;
+
+	color: #04819E;
+}
+.answer-tracker {
+	display: flex;
+	margin-top: 10px;
+	padding: 10px 0;
+
+	border-top: 1px solid #000;
+}
+.answer-tracker div {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+
+	background: #ccc;
+	border-radius: 50%;
+}
+.answer-tracker div.correct {
+	background: green;
+}
+.answer-tracker div.wrong {
+	background: red;
+}

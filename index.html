@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Викторина</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="popup">
+		<h3>
+			Вы прошли тест на
+			<span class="correct-answer"></span> из
+			<span class="all-questions"></span>
+		</h3>
+
+		<button class="btn-again">Попробовать снова</button>
+	</div>
+	<div class="quiz-container">
+		<div class="question-number">
+			<h3>
+				Вопрос 
+				<span class="number-of-question"></span> 
+				из 
+				<span class="number-of-all-questions"></span>
+			</h3>
+		</div>
+
+		<div class="question"></div>
+
+		<div class="options">
+			<div class="option option1" data-id="0"></div>
+			<div class="option option2" data-id="1"></div>
+			<div class="option option3" data-id="2"></div>
+			<div class="option option4" data-id="3"></div>
+		</div>
+
+		<div class="button">
+			<button class="btn-next">Следующий</button>
+		</div>
+
+		<div class="answer-tracker"></div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
